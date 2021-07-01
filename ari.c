@@ -2,7 +2,7 @@ string ari(string s)
 {
 float ri;
 int nc=0,nw=0,ns=0;
-for(int i=0;s[i]!='\0';i++)
+for(int i=0;s[i]!='\0';++i)
 {
 if(isalnum(s[i]))
 nc++;
@@ -11,7 +11,7 @@ nw++;
 if((s[i]=='.')||(s[i]=='!')||(s[i]=='?'))
 ns++;
 }
-score=(4.71*(float)nc/(float)nw)+(0.5*(float)nw/(float)ns)-21.43;
+ri=(4.71*(float)nc/(float)nw)+(0.5*(float)nw/(float)ns)-21.43;
 if((int)(ri+0.5)>(int)ri)
 score=(int)(ri+0.5);
 else
