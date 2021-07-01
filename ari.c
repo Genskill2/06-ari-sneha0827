@@ -13,9 +13,9 @@ ns++;
 }
 ri=(4.71*(float)nc/(float)nw)+(0.5*(float)nw/(float)ns)-21.43;
 if((int)(ri+0.5)>(int)ri)
-score=(int)(ri+0.5);
+ri=(int)(ri+0.5);
 else
-score=(int)(ri)+1;
+ri=(int)(ri)+1;
 switch((int)ri)
 {
 case 1:return "Kindergarten";
